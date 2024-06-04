@@ -1,0 +1,38 @@
+/* Banner.module.css */
+.bannerRoot {
+    position: relative;
+    height: 80vh;
+    background-color:   #ffd138;
+    z-index: -10;
+   
+}
+
+.bannerImage {
+    max-width: 100%;
+    height: 80vh;
+    position: absolute;
+    right: 0;
+}
+h1 {
+    position: absolute;
+    left: 120px;
+    top: 30%; /* Center vertically */
+    transform: translateY(-50%); 
+    color: white; /* Change the text color as needed */
+    font-size: 2em; /* Adjust the font size as needed */
+    font-weight: bold;
+    color:  #806600;
+    border-radius: 12px;
+    opacity: 0; /* Start with the text hidden */
+    animation: fadeInOut 2s ease-in-out 1s forwards;
+    z-index: 1; /* Ensure the text is on top of the background */
+}
+    @keyframes fadeInOut {
+        0%, 100% {
+            opacity: 0;
+        }
+        25%, 75% {
+            opacity: 1;
+        }
+    }
+    
